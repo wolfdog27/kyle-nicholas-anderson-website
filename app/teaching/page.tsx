@@ -64,11 +64,11 @@ export default function Teaching() {
       </div>
 
       {/* Services */}
-      <section style={{ backgroundColor: "#f5f0eb" }} className="py-20">
+      <section style={{ backgroundColor: "#f5f0eb" }} className="py-16">
         <div className="max-w-6xl mx-auto px-6">
           <p
             style={{ color: "#9b8070", fontFamily: "var(--font-source-sans), sans-serif" }}
-            className="text-xs tracking-[0.3em] uppercase mb-12"
+            className="text-xs tracking-[0.3em] uppercase mb-8"
           >
             Services
           </p>
@@ -77,12 +77,12 @@ export default function Teaching() {
               <div
                 key={title}
                 style={{ backgroundColor: "#f5f0eb" }}
-                className="px-10 py-12 flex flex-col"
+                className="px-8 py-8 flex flex-col"
               >
-                <Icon size={28} style={{ color: "#8b4513" }} className="mb-6" />
+                <Icon size={28} style={{ color: "#8b4513" }} className="mb-4" />
                 <h3
                   style={{ fontFamily: "var(--font-cormorant), Georgia, serif", color: "#2c1810" }}
-                  className="text-3xl font-light mb-5"
+                  className="text-3xl font-light mb-3"
                 >
                   {title}
                 </h3>
@@ -99,7 +99,7 @@ export default function Teaching() {
       </section>
 
       {/* CTA */}
-      <section className="max-w-6xl mx-auto px-6 py-20 text-center">
+      <section className="max-w-6xl mx-auto px-6 py-16 text-center">
         <h2
           style={{ fontFamily: "var(--font-cormorant), Georgia, serif", color: "#2c1810" }}
           className="text-4xl font-light italic mb-4"

@@ -203,23 +203,33 @@ export default function Home() {
             Videos
           </h2>
           <div className="grid md:grid-cols-2 gap-6">
-            {[1, 2].map((i) => (
-              <div
-                key={i}
-                className="relative aspect-video flex items-center justify-center"
-                style={{ backgroundColor: "#d4ccc4" }}
+            {/* Video 1 */}
+            <div className="relative aspect-video">
+              <iframe
+                src="https://www.youtube.com/embed/iUBJW8drza4?rel=0&modestbranding=1"
+                title="Kyle Nicholas Anderson — Video Reel"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="absolute inset-0 w-full h-full"
+                style={{ border: "none" }}
+              />
+            </div>
+
+            {/* Video 2 — placeholder */}
+            <div
+              className="relative aspect-video flex items-center justify-center"
+              style={{ backgroundColor: "#d4ccc4" }}
+            >
+              <p
+                style={{
+                  fontFamily: "var(--font-cormorant), Georgia, serif",
+                  color: "#6b4226",
+                }}
+                className="text-xl italic"
               >
-                <p
-                  style={{
-                    fontFamily: "var(--font-cormorant), Georgia, serif",
-                    color: "#6b4226",
-                  }}
-                  className="text-xl italic"
-                >
-                  Video {i} — Coming Soon
-                </p>
-              </div>
-            ))}
+                Coming Soon
+              </p>
+            </div>
           </div>
         </div>
       </section>

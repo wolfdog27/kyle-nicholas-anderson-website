@@ -88,25 +88,10 @@ export default function Teaching() {
                 </h3>
                 <p
                   style={{ fontFamily: "var(--font-source-sans), sans-serif", color: "#6b4226" }}
-                  className="text-base leading-relaxed mb-8"
+                  className="text-base leading-relaxed"
                 >
                   {description}
                 </p>
-                <ul className="mt-auto space-y-2">
-                  {items.map((item) => (
-                    <li
-                      key={item}
-                      style={{
-                        fontFamily: "var(--font-source-sans), sans-serif",
-                        color: "#2c1810",
-                      }}
-                      className="text-base flex items-start gap-2"
-                    >
-                      <span style={{ color: "#8b4513" }} className="mt-1">·</span>
-                      {item}
-                    </li>
-                  ))}
-                </ul>
               </div>
             ))}
           </div>

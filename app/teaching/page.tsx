@@ -64,11 +64,11 @@ export default function Teaching() {
       </div>
 
       {/* Services */}
-      <section style={{ backgroundColor: "#f5f0eb" }} className="py-16">
+      <section style={{ backgroundColor: "#f5f0eb" }} className="py-20">
         <div className="max-w-6xl mx-auto px-6">
           <p
             style={{ color: "#9b8070", fontFamily: "var(--font-source-sans), sans-serif" }}
-            className="text-xs tracking-[0.3em] uppercase mb-10"
+            className="text-xs tracking-[0.3em] uppercase mb-12"
           >
             Services
           </p>
@@ -77,22 +77,22 @@ export default function Teaching() {
               <div
                 key={title}
                 style={{ backgroundColor: "#f5f0eb" }}
-                className="px-8 py-10 flex flex-col"
+                className="px-10 py-12 flex flex-col"
               >
-                <Icon size={22} style={{ color: "#8b4513" }} className="mb-5" />
+                <Icon size={28} style={{ color: "#8b4513" }} className="mb-6" />
                 <h3
                   style={{ fontFamily: "var(--font-cormorant), Georgia, serif", color: "#2c1810" }}
-                  className="text-2xl font-light mb-4"
+                  className="text-3xl font-light mb-5"
                 >
                   {title}
                 </h3>
                 <p
                   style={{ fontFamily: "var(--font-source-sans), sans-serif", color: "#6b4226" }}
-                  className="text-sm leading-relaxed mb-6"
+                  className="text-base leading-relaxed mb-8"
                 >
                   {description}
                 </p>
-                <ul className="mt-auto space-y-1.5">
+                <ul className="mt-auto space-y-2">
                   {items.map((item) => (
                     <li
                       key={item}
@@ -100,7 +100,7 @@ export default function Teaching() {
                         fontFamily: "var(--font-source-sans), sans-serif",
                         color: "#2c1810",
                       }}
-                      className="text-sm flex items-start gap-2"
+                      className="text-base flex items-start gap-2"
                     >
                       <span style={{ color: "#8b4513" }} className="mt-1">·</span>
                       {item}

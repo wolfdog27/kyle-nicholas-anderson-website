@@ -215,20 +215,16 @@ export default function Home() {
               />
             </div>
 
-            {/* Video 2 — placeholder */}
-            <div
-              className="relative aspect-video flex items-center justify-center"
-              style={{ backgroundColor: "#d4ccc4" }}
-            >
-              <p
-                style={{
-                  fontFamily: "var(--font-cormorant), Georgia, serif",
-                  color: "#6b4226",
-                }}
-                className="text-xl italic"
-              >
-                Coming Soon
-              </p>
+            {/* Video 2 */}
+            <div className="relative aspect-video">
+              <iframe
+                src="https://www.youtube.com/embed/0g6H4Gi8AMg?rel=0&modestbranding=1"
+                title="Kyle Nicholas Anderson — Video 2"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="absolute inset-0 w-full h-full"
+                style={{ border: "none" }}
+              />
             </div>
           </div>
         </div>

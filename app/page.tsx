@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import PhotoGrid from "@/components/PhotoGrid";
 
 const credits = [
   "Ogunquit Playhouse",
@@ -10,6 +11,18 @@ const credits = [
   "The Muny",
   "The 5th Avenue Theatre",
   "Syracuse Stage",
+];
+
+const photos = [
+  { src: "/images/gallery/gallery-1.webp", alt: "Production photo 1" },
+  { src: "/images/gallery/gallery-2.jpg", alt: "Production photo 2" },
+  { src: "/images/gallery/gallery-3.jpg", alt: "Production photo 3" },
+  { src: "/images/gallery/gallery-4.jpg", alt: "Production photo 4" },
+  { src: "/images/gallery/gallery-5.jpg", alt: "Production photo 5" },
+  { src: "/images/gallery/gallery-6.jpg", alt: "Production photo 6" },
+  { src: "/images/gallery/gallery-7.jpg", alt: "Production photo 7" },
+  { src: "/images/gallery/gallery-8.jpg", alt: "Production photo 8" },
+  { src: "/images/gallery/gallery-9.jpg", alt: "Production photo 9" },
 ];
 
 export default function Home() {
@@ -38,7 +51,7 @@ export default function Home() {
               fontFamily: "var(--font-cormorant), Georgia, serif",
               color: "#f5f0eb",
             }}
-            className="text-6xl md:text-8xl font-light italic leading-none mb-3"
+            className="text-5xl sm:text-6xl md:text-8xl font-light italic leading-none mb-3"
           >
             Kyle Nicholas Anderson
           </h1>
@@ -79,16 +92,16 @@ export default function Home() {
             }}
             className="text-2xl md:text-3xl font-light leading-relaxed mb-6"
           >
-            &ldquo;A New York based actor with over a decade&apos;s worth of
-            experience, bringing truthful storytelling to Broadway-caliber stages
-            across the country.&rdquo;
+            A New York based actor with over a decade&apos;s worth of experience,
+            bringing truthful storytelling to Broadway-caliber stages across the
+            country.
           </p>
           <Link
-            href="/about"
+            href="/contact"
             style={{ color: "#8b4513" }}
             className="text-sm tracking-widest uppercase border-b border-current pb-0.5 hover:opacity-70 transition-opacity"
           >
-            Learn More
+            Get in Touch
           </Link>
         </div>
       </section>
@@ -122,49 +135,55 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Gallery teaser */}
+      {/* Production Photos */}
       <section style={{ backgroundColor: "#f5f0eb" }} className="py-20">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="flex items-end justify-between mb-8">
-            <h2
-              style={{
-                fontFamily: "var(--font-cormorant), Georgia, serif",
-                color: "#2c1810",
-              }}
-              className="text-4xl font-light italic"
-            >
-              Production Photos
-            </h2>
-            <Link
-              href="/gallery"
-              style={{ color: "#8b4513" }}
-              className="text-xs tracking-widest uppercase border-b border-current pb-0.5 hover:opacity-70 transition-opacity hidden sm:block"
-            >
-              View All
-            </Link>
-          </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-            {[1, 2, 3, 4, 5, 6].map((i) => (
-              <Link key={i} href="/gallery" className="block overflow-hidden group">
-                <div className="relative aspect-[4/3] overflow-hidden">
-                  <Image
-                    src={`/images/gallery/gallery-${i}${i === 1 ? ".webp" : ".jpg"}`}
-                    alt={`Production photo ${i}`}
-                    fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
-                    sizes="(max-width: 768px) 50vw, 33vw"
-                  />
-                </div>
-              </Link>
+          <h2
+            style={{
+              fontFamily: "var(--font-cormorant), Georgia, serif",
+              color: "#2c1810",
+            }}
+            className="text-4xl font-light italic mb-10"
+          >
+            Production Photos
+          </h2>
+          <PhotoGrid photos={photos} />
+        </div>
+      </section>
+
+      {/* Videos */}
+      <section style={{ backgroundColor: "#ede8e2" }} className="py-20">
+        <div className="max-w-6xl mx-auto px-6">
+          <h2
+            style={{
+              fontFamily: "var(--font-cormorant), Georgia, serif",
+              color: "#2c1810",
+            }}
+            className="text-4xl font-light italic mb-10"
+          >
+            Videos
+          </h2>
+
+          {/* Video placeholder — replace each div below with an <iframe> or <ReactPlayer> once you have links */}
+          <div className="grid md:grid-cols-2 gap-6">
+            {[1, 2].map((i) => (
+              <div
+                key={i}
+                className="relative aspect-video flex items-center justify-center"
+                style={{ backgroundColor: "#d4ccc4" }}
+              >
+                <p
+                  style={{
+                    fontFamily: "var(--font-cormorant), Georgia, serif",
+                    color: "#6b4226",
+                  }}
+                  className="text-xl italic"
+                >
+                  Video {i} — Coming Soon
+                </p>
+              </div>
             ))}
           </div>
-          <Link
-            href="/gallery"
-            style={{ color: "#8b4513" }}
-            className="text-xs tracking-widest uppercase border-b border-current pb-0.5 hover:opacity-70 transition-opacity sm:hidden mt-6 inline-block"
-          >
-            View All Photos
-          </Link>
         </div>
       </section>
     </>

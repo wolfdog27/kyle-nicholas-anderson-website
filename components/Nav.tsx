@@ -7,10 +7,7 @@ import { Menu, X } from "lucide-react";
 
 const links = [
   { href: "/", label: "Home" },
-  { href: "/about", label: "About" },
-  { href: "/gallery", label: "Gallery" },
-  { href: "/reel", label: "Reel" },
-  { href: "/headshots", label: "Headshots" },
+  { href: "/headshots", label: "Headshot/Resume" },
   { href: "/teaching", label: "Teaching" },
   { href: "/contact", label: "Contact" },
 ];
@@ -28,7 +25,7 @@ export default function Nav() {
         <Link
           href="/"
           style={{ fontFamily: "var(--font-cormorant), Georgia, serif", color: "#2c1810" }}
-          className="text-xl font-semibold tracking-wide"
+          className="text-base md:text-xl font-semibold whitespace-nowrap"
         >
           Kyle Nicholas Anderson
         </Link>
@@ -57,7 +54,7 @@ export default function Nav() {
 
         {/* Mobile hamburger */}
         <button
-          className="md:hidden"
+          className="md:hidden shrink-0 ml-3"
           style={{ color: "#2c1810" }}
           onClick={() => setOpen(!open)}
           aria-label="Toggle menu"

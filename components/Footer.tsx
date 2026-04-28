@@ -35,7 +35,7 @@ export default function Footer() {
           Kyle Nicholas Anderson
         </p>
 
-        <div className="flex gap-6 items-center">
+        <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-6">
           <a
             href="mailto:KyleNicholasAnderson@gmail.com"
             style={{ color: "#8b4513" }}

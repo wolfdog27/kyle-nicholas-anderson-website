@@ -191,7 +191,7 @@ export default function Home() {
       </section>
 
       {/* Videos */}
-      <section style={{ backgroundColor: "#ede8e2" }} className="py-20">
+      <section style={{ backgroundColor: "#f5f0eb" }} className="py-20">
         <div className="max-w-6xl mx-auto px-6">
           <h2
             style={{
@@ -225,7 +225,7 @@ export default function Home() {
       </section>
 
       {/* Production Photos */}
-      <section style={{ backgroundColor: "#f5f0eb" }} className="py-20">
+      <section style={{ backgroundColor: "#ede8e2" }} className="py-20">
         <div className="max-w-6xl mx-auto px-6">
           <h2
             style={{

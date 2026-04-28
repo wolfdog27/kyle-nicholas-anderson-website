@@ -11,18 +11,73 @@ const credits = [
   "The Muny",
   "The 5th Avenue Theatre",
   "Syracuse Stage",
+  "Village Theatre",
 ];
 
 const photos = [
-  { src: "/images/gallery/gallery-1.webp", alt: "Production photo 1" },
-  { src: "/images/gallery/gallery-2.jpg", alt: "Production photo 2" },
-  { src: "/images/gallery/gallery-3.jpg", alt: "Production photo 3" },
-  { src: "/images/gallery/gallery-4.jpg", alt: "Production photo 4" },
-  { src: "/images/gallery/gallery-5.jpg", alt: "Production photo 5" },
-  { src: "/images/gallery/gallery-6.jpg", alt: "Production photo 6" },
-  { src: "/images/gallery/gallery-7.jpg", alt: "Production photo 7" },
-  { src: "/images/gallery/gallery-8.jpg", alt: "Production photo 8" },
-  { src: "/images/gallery/gallery-9.jpg", alt: "Production photo 9" },
+  {
+    src: "/images/gallery/gallery-1.webp",
+    alt: "Production photo 1",
+    theatre: "",
+    show: "",
+    photographer: "Nile Scott Studios",
+  },
+  {
+    src: "/images/gallery/gallery-2.jpg",
+    alt: "Production photo 2",
+    theatre: "",
+    show: "Toots",
+    photographer: "",
+  },
+  {
+    src: "/images/gallery/gallery-3.jpg",
+    alt: "Production photo 3",
+    theatre: "",
+    show: "",
+    photographer: "",
+  },
+  {
+    src: "/images/gallery/gallery-4.jpg",
+    alt: "Production photo 4",
+    theatre: "",
+    show: "Little Shop of Horrors",
+    photographer: "",
+  },
+  {
+    src: "/images/gallery/gallery-5.jpg",
+    alt: "Production photo 5",
+    theatre: "",
+    show: "",
+    photographer: "",
+  },
+  {
+    src: "/images/gallery/gallery-6.jpg",
+    alt: "Production photo 6",
+    theatre: "Dallas Theater Center",
+    show: "",
+    photographer: "",
+  },
+  {
+    src: "/images/gallery/gallery-7.jpg",
+    alt: "Production photo 7",
+    theatre: "",
+    show: "",
+    photographer: "",
+  },
+  {
+    src: "/images/gallery/gallery-8.jpg",
+    alt: "Production photo 8",
+    theatre: "",
+    show: "As You Like It",
+    photographer: "",
+  },
+  {
+    src: "/images/gallery/gallery-9.jpg",
+    alt: "Production photo 9",
+    theatre: "",
+    show: "",
+    photographer: "T. Martin",
+  },
 ];
 
 export default function Home() {
@@ -163,8 +218,6 @@ export default function Home() {
           >
             Videos
           </h2>
-
-          {/* Video placeholder — replace each div below with an <iframe> or <ReactPlayer> once you have links */}
           <div className="grid md:grid-cols-2 gap-6">
             {[1, 2].map((i) => (
               <div

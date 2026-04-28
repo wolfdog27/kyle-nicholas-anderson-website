@@ -63,6 +63,26 @@ export default function Teaching() {
         </div>
       </div>
 
+      {/* Quote — placeholder */}
+      <section style={{ backgroundColor: "#ffffff" }} className="py-16">
+        <div className="max-w-6xl mx-auto px-6">
+          <blockquote className="max-w-2xl">
+            <p
+              style={{ fontFamily: "var(--font-cormorant), Georgia, serif", color: "#2c1810" }}
+              className="text-2xl md:text-3xl font-light italic leading-relaxed mb-4"
+            >
+              &ldquo;[Your quote here]&rdquo;
+            </p>
+            <cite
+              style={{ fontFamily: "var(--font-source-sans), sans-serif", color: "#9b8070" }}
+              className="text-sm not-italic tracking-widest uppercase"
+            >
+              — Kyle Nicholas Anderson
+            </cite>
+          </blockquote>
+        </div>
+      </section>
+
       {/* Services */}
       <section style={{ backgroundColor: "#ede8e2" }} className="py-16">
         <div className="max-w-6xl mx-auto px-6">

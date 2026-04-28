@@ -9,10 +9,14 @@ const videos = [
     id: "0g6H4Gi8AMg",
     title: "Kyle Nicholas Anderson — Video 2",
   },
-  // Add third video id here when ready
-  null,
-  // Add fourth video id here when ready
-  null,
+  {
+    id: "C-Vy6n0ZRsw",
+    title: "Kyle Nicholas Anderson — Video 3",
+  },
+  {
+    id: "3JjXO44NNTU",
+    title: "Kyle Nicholas Anderson — Video 4",
+  },
 ];
 
 const credits = [
@@ -25,6 +29,8 @@ const credits = [
   "The 5th Avenue Theatre",
   "Syracuse Stage",
   "Village Theatre",
+  "Theatre By The Sea",
+  "Flat Rock Playhouse",
 ];
 
 const photos = [

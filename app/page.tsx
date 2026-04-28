@@ -1,65 +1,172 @@
 import Image from "next/image";
+import Link from "next/link";
+
+const credits = [
+  "Ogunquit Playhouse",
+  "Dallas Theater Center",
+  "Seattle Repertory Theatre",
+  "Paper Mill Playhouse",
+  "North Shore Music Theatre",
+  "The Muny",
+  "The 5th Avenue Theatre",
+  "Syracuse Stage",
+];
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
+    <>
+      {/* Hero */}
+      <section className="relative min-h-[90vh] flex items-end overflow-hidden">
         <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
+          src="/images/hero.jpg"
+          alt="Kyle Nicholas Anderson"
+          fill
           priority
+          className="object-cover object-top"
+          sizes="100vw"
         />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "linear-gradient(to top, rgba(44,24,16,0.82) 0%, rgba(44,24,16,0.2) 50%, transparent 100%)",
+          }}
+        />
+        <div className="relative z-10 max-w-6xl mx-auto px-6 pb-16 w-full">
+          <h1
+            style={{
+              fontFamily: "var(--font-cormorant), Georgia, serif",
+              color: "#f5f0eb",
+            }}
+            className="text-6xl md:text-8xl font-light italic leading-none mb-3"
+          >
+            Kyle Nicholas Anderson
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+          <p
+            style={{
+              fontFamily: "var(--font-source-sans), sans-serif",
+              color: "#d4ccc4",
+            }}
+            className="text-sm tracking-[0.25em] uppercase mb-8"
+          >
+            Actor &nbsp;·&nbsp; Performer &nbsp;·&nbsp; Teaching Artist
           </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            href="/contact"
+            style={{
+              backgroundColor: "transparent",
+              border: "1px solid #d4ccc4",
+              color: "#f5f0eb",
+              fontFamily: "var(--font-source-sans), sans-serif",
+            }}
+            className="inline-block text-xs tracking-widest uppercase px-7 py-3 hover:bg-white/10 transition-colors"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+            Get in Touch
+          </Link>
         </div>
-      </main>
-    </div>
+      </section>
+
+      {/* Bio teaser */}
+      <section
+        style={{ backgroundColor: "#f5f0eb" }}
+        className="py-20 max-w-6xl mx-auto px-6"
+      >
+        <div className="max-w-2xl">
+          <p
+            style={{
+              fontFamily: "var(--font-cormorant), Georgia, serif",
+              color: "#2c1810",
+            }}
+            className="text-2xl md:text-3xl font-light leading-relaxed mb-6"
+          >
+            &ldquo;A New York based actor with over a decade&apos;s worth of
+            experience, bringing truthful storytelling to Broadway-caliber stages
+            across the country.&rdquo;
+          </p>
+          <Link
+            href="/about"
+            style={{ color: "#8b4513" }}
+            className="text-sm tracking-widest uppercase border-b border-current pb-0.5 hover:opacity-70 transition-opacity"
+          >
+            Learn More
+          </Link>
+        </div>
+      </section>
+
+      {/* Credits strip */}
+      <section style={{ backgroundColor: "#ede8e2" }} className="py-14">
+        <div className="max-w-6xl mx-auto px-6">
+          <p
+            style={{
+              fontFamily: "var(--font-source-sans), sans-serif",
+              color: "#9b8070",
+            }}
+            className="text-xs tracking-[0.3em] uppercase mb-8"
+          >
+            Featured Credits
+          </p>
+          <div className="flex flex-wrap gap-x-10 gap-y-3">
+            {credits.map((c) => (
+              <span
+                key={c}
+                style={{
+                  fontFamily: "var(--font-cormorant), Georgia, serif",
+                  color: "#6b4226",
+                }}
+                className="text-xl font-light"
+              >
+                {c}
+              </span>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Gallery teaser */}
+      <section style={{ backgroundColor: "#f5f0eb" }} className="py-20">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="flex items-end justify-between mb-8">
+            <h2
+              style={{
+                fontFamily: "var(--font-cormorant), Georgia, serif",
+                color: "#2c1810",
+              }}
+              className="text-4xl font-light italic"
+            >
+              Production Photos
+            </h2>
+            <Link
+              href="/gallery"
+              style={{ color: "#8b4513" }}
+              className="text-xs tracking-widest uppercase border-b border-current pb-0.5 hover:opacity-70 transition-opacity hidden sm:block"
+            >
+              View All
+            </Link>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+            {[1, 2, 3, 4, 5, 6].map((i) => (
+              <Link key={i} href="/gallery" className="block overflow-hidden group">
+                <div className="relative aspect-[4/3] overflow-hidden">
+                  <Image
+                    src={`/images/gallery/gallery-${i}${i === 1 ? ".webp" : ".jpg"}`}
+                    alt={`Production photo ${i}`}
+                    fill
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    sizes="(max-width: 768px) 50vw, 33vw"
+                  />
+                </div>
+              </Link>
+            ))}
+          </div>
+          <Link
+            href="/gallery"
+            style={{ color: "#8b4513" }}
+            className="text-xs tracking-widest uppercase border-b border-current pb-0.5 hover:opacity-70 transition-opacity sm:hidden mt-6 inline-block"
+          >
+            View All Photos
+          </Link>
+        </div>
+      </section>
+    </>
   );
 }

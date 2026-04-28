@@ -19,7 +19,7 @@ export default function Home() {
             "linear-gradient(to top, rgba(44,24,16,0.82) 0%, rgba(44,24,16,0.2) 50%, transparent 100%)",
         }}
       />
-      <div className="relative z-10 max-w-6xl mx-auto px-6 pb-16 w-full">
+      <div className="relative z-10 max-w-6xl mx-auto px-6 pb-4 w-full">
         <h1
           style={{
             fontFamily: "var(--font-cormorant), Georgia, serif",

@@ -3,7 +3,9 @@
 import Image from "next/image";
 import { useState } from "react";
 import Lightbox from "yet-another-react-lightbox";
+import Captions from "yet-another-react-lightbox/plugins/captions";
 import "yet-another-react-lightbox/styles.css";
+import "yet-another-react-lightbox/plugins/captions.css";
 
 interface Photo {
   src: string;
@@ -40,8 +42,8 @@ export default function PhotoGrid({ photos }: PhotoGridProps) {
               </div>
             </button>
 
-            {/* Caption tags */}
-            {(photo.theatre || photo.show || photo.photographer) && (
+            {/* Caption below grid tile */}
+            {(photo.show || photo.theatre) && (
               <div className="pt-2 pb-1 space-y-0.5">
                 {photo.show && (
                   <p
@@ -65,17 +67,6 @@ export default function PhotoGrid({ photos }: PhotoGridProps) {
                     {photo.theatre}
                   </p>
                 )}
-                {photo.photographer && (
-                  <p
-                    style={{
-                      fontFamily: "var(--font-source-sans), sans-serif",
-                      color: "#9b8070",
-                    }}
-                    className="text-xs leading-tight"
-                  >
-                    Photo: {photo.photographer}
-                  </p>
-                )}
               </div>
             )}
           </div>
@@ -86,7 +77,12 @@ export default function PhotoGrid({ photos }: PhotoGridProps) {
         open={index >= 0}
         close={() => setIndex(-1)}
         index={index}
-        slides={photos.map((p) => ({ src: p.src, alt: p.alt }))}
+        plugins={[Captions]}
+        slides={photos.map((p) => ({
+          src: p.src,
+          alt: p.alt,
+          description: p.photographer ? `Photography: ${p.photographer}` : undefined,
+        }))}
       />
     </>
   );

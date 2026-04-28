@@ -63,28 +63,8 @@ export default function Teaching() {
         </div>
       </div>
 
-      {/* Quote — placeholder */}
-      <section style={{ backgroundColor: "#ffffff" }} className="py-16">
-        <div className="max-w-6xl mx-auto px-6">
-          <blockquote className="max-w-2xl">
-            <p
-              style={{ fontFamily: "var(--font-cormorant), Georgia, serif", color: "#2c1810" }}
-              className="text-2xl md:text-3xl font-light italic leading-relaxed mb-4"
-            >
-              &ldquo;[Your quote here]&rdquo;
-            </p>
-            <cite
-              style={{ fontFamily: "var(--font-source-sans), sans-serif", color: "#9b8070" }}
-              className="text-sm not-italic tracking-widest uppercase"
-            >
-              — Kyle Nicholas Anderson
-            </cite>
-          </blockquote>
-        </div>
-      </section>
-
       {/* Services */}
-      <section style={{ backgroundColor: "#ede8e2" }} className="py-16">
+      <section style={{ backgroundColor: "#f5f0eb" }} className="py-16">
         <div className="max-w-6xl mx-auto px-6">
           <p
             style={{ color: "#9b8070", fontFamily: "var(--font-source-sans), sans-serif" }}
@@ -96,7 +76,7 @@ export default function Teaching() {
             {services.map(({ icon: Icon, title, description, items }) => (
               <div
                 key={title}
-                style={{ backgroundColor: "#ede8e2" }}
+                style={{ backgroundColor: "#f5f0eb" }}
                 className="px-8 py-10 flex flex-col"
               >
                 <Icon size={22} style={{ color: "#8b4513" }} className="mb-5" />
@@ -122,9 +102,7 @@ export default function Teaching() {
                       }}
                       className="text-sm flex items-start gap-2"
                     >
-                      <span style={{ color: "#8b4513" }} className="mt-1">
-                        ·
-                      </span>
+                      <span style={{ color: "#8b4513" }} className="mt-1">·</span>
                       {item}
                     </li>
                   ))}

@@ -190,22 +190,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Production Photos */}
-      <section style={{ backgroundColor: "#f5f0eb" }} className="py-20">
-        <div className="max-w-6xl mx-auto px-6">
-          <h2
-            style={{
-              fontFamily: "var(--font-cormorant), Georgia, serif",
-              color: "#2c1810",
-            }}
-            className="text-4xl font-light italic mb-10"
-          >
-            Production Photos
-          </h2>
-          <PhotoGrid photos={photos} />
-        </div>
-      </section>
-
       {/* Videos */}
       <section style={{ backgroundColor: "#ede8e2" }} className="py-20">
         <div className="max-w-6xl mx-auto px-6">
@@ -237,6 +221,22 @@ export default function Home() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Production Photos */}
+      <section style={{ backgroundColor: "#f5f0eb" }} className="py-20">
+        <div className="max-w-6xl mx-auto px-6">
+          <h2
+            style={{
+              fontFamily: "var(--font-cormorant), Georgia, serif",
+              color: "#2c1810",
+            }}
+            className="text-4xl font-light italic mb-10"
+          >
+            Production Photos
+          </h2>
+          <PhotoGrid photos={photos} />
         </div>
       </section>
     </>

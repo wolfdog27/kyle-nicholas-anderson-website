@@ -36,7 +36,7 @@ export default function Home() {
           }}
           className="text-sm tracking-[0.25em] uppercase mb-8"
         >
-          Actor &nbsp;·&nbsp; Performer &nbsp;·&nbsp; Teaching Artist
+          Actor &nbsp;·&nbsp; Creative &nbsp;·&nbsp; Teaching Artist
         </p>
         <Link
           href="/contact"

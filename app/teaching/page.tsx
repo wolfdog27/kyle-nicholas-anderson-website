@@ -17,7 +17,7 @@ const services = [
     icon: GraduationCap,
     title: "College Audition Prep",
     description:
-      "A comprehensive preparation package designed for students pursuing BFA and BA programs. Kyle will help you build a polished, well-rounded audition book that showcases range and readiness.",
+      "A comprehensive preparation package designed for students pursuing BFA and BA programs. Kyle will help you build a polished, well-rounded audition that showcases range and readiness.",
     items: [
       "Four contrasting songs",
       "Four contrasting monologues",

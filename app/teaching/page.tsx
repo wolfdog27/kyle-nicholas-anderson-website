@@ -28,7 +28,7 @@ const services = [
     icon: Users,
     title: "Teaching Artist",
     description:
-      "On-site residencies and workshops drawing from over a decade of professional experience. Kyle brings rigorous, practical curriculum to schools, conservatories, and community arts programs.",
+      "On-site residencies and workshops drawing from over a decade of professional experience. Kyle brings rigorous, joyful, and practical curriculum to schools, conservatories, and community arts programs.",
     items: [
       "Scene study & audition technique",
       "Song & text analysis",

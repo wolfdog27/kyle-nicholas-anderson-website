@@ -4,9 +4,9 @@ import { Mic, GraduationCap, Users } from "lucide-react";
 const services = [
   {
     icon: Mic,
-    title: "Private Coaching",
+    title: "One-On-One Coaching",
     description:
-      "One-on-one sessions tailored to your goals — whether you're preparing an audition, working a callback, or developing your craft. Kyle focuses on material analysis, character development, and finding smart choices that highlight your strengths and instincts.",
+      "One-on-one sessions tailored to your goals — whether you're preparing an audition, working a callback, or developing your craft. Kyle works with beginning and established clients.",
     items: [
       "Audition preparation",
       "Callback coaching",

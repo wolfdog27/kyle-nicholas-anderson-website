@@ -112,7 +112,7 @@ export default function ContactForm() {
           className="px-4 py-3 text-sm focus:outline-none focus:ring-1 focus:ring-[#8b4513]"
         >
           <option value="">Select a subject…</option>
-          <option value="Coaching">Private Coaching</option>
+          <option value="Coaching">One-On-One Coaching</option>
           <option value="College Audition Prep">College Audition Prep</option>
           <option value="Teaching Artist">Teaching Artist / Residency</option>
           <option value="General">General Inquiry</option>

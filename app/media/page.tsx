@@ -126,12 +126,12 @@ export default function Media() {
       {/* Videos */}
       <section style={{ backgroundColor: "#f5f0eb" }} className="py-20">
         <div className="max-w-6xl mx-auto px-6">
-          <h2
-            style={{ fontFamily: "var(--font-cormorant), Georgia, serif", color: "#2c1810" }}
-            className="text-4xl font-light italic mb-10"
+          <p
+            style={{ color: "#9b8070", fontFamily: "var(--font-source-sans), sans-serif" }}
+            className="text-xs tracking-[0.3em] uppercase mb-8"
           >
             Videos
-          </h2>
+          </p>
           <div className="grid md:grid-cols-2 gap-6">
             {videos.map((video, i) =>
               video ? (
@@ -196,12 +196,12 @@ export default function Media() {
       {/* Production Photos */}
       <section style={{ backgroundColor: "#f5f0eb" }} className="py-20">
         <div className="max-w-6xl mx-auto px-6">
-          <h2
-            style={{ fontFamily: "var(--font-cormorant), Georgia, serif", color: "#2c1810" }}
-            className="text-4xl font-light italic mb-10"
+          <p
+            style={{ color: "#9b8070", fontFamily: "var(--font-source-sans), sans-serif" }}
+            className="text-xs tracking-[0.3em] uppercase mb-8"
           >
             Production Photos
-          </h2>
+          </p>
           <PhotoGrid photos={photos} />
         </div>
       </section>

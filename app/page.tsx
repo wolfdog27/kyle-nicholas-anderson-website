@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <section className="relative min-h-[90vh] flex items-end overflow-hidden">
+    <section className="relative min-h-[100vh] flex items-end overflow-hidden">
       <Image
         src="/images/hero.jpg"
         alt="Kyle Nicholas Anderson"

@@ -6,7 +6,7 @@ const services = [
     icon: Mic,
     title: "Private Coaching",
     description:
-      "One-on-one sessions tailored to your goals — whether you're preparing an audition, working a callback, or developing your craft through the Actor Gym. Kyle focuses on material analysis, truthful character work, and making distinctive choices that highlight your strengths.",
+      "One-on-one sessions tailored to your goals — whether you're preparing an audition, working a callback, or developing your craft. Kyle focuses on material analysis, character development, and finding smart choices that highlight your strengths and instincts.",
     items: [
       "Audition preparation",
       "Callback coaching",

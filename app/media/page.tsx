@@ -28,9 +28,9 @@ const credits = [
   "The Muny",
   "The 5th Avenue Theatre",
   "Syracuse Stage",
+  "Flat Rock Playhouse",
   "Village Theatre",
   "Theatre By The Sea",
-  "Flat Rock Playhouse",
 ];
 
 const photos = [

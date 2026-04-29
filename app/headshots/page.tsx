@@ -85,7 +85,7 @@ export default function Headshots() {
         style={{ backgroundColor: "#ede8e2", borderTop: "1px solid #d4ccc4" }}
         className="py-16"
       >
-        <div className="max-w-3xl mx-auto px-6">
+        <div className="max-w-6xl mx-auto px-6">
           <div className="flex items-center justify-between mb-8">
             <p
               style={{ color: "#9b8070", fontFamily: "var(--font-source-sans), sans-serif" }}

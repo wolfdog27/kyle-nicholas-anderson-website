@@ -6,7 +6,7 @@ const services = [
     icon: Mic,
     title: "One-On-One Coaching",
     description:
-      "One-on-one sessions tailored to your goals — whether you're preparing an audition, working a callback, or developing your craft. Kyle works with beginning and established clients.",
+      "Personalized sessions tailored to your goals — whether you're preparing an audition, working a callback, or developing your craft. Kyle works with beginning and established clients.",
     items: [
       "Audition preparation",
       "Callback coaching",

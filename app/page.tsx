@@ -9,7 +9,7 @@ export default function Home() {
         alt="Kyle Nicholas Anderson"
         fill
         priority
-        className="object-cover object-top"
+        className="object-cover object-[60%_50%] md:object-top"
         sizes="100vw"
       />
       <div

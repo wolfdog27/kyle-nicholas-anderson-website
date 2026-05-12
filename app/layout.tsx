@@ -33,7 +33,7 @@ export default function RootLayout({
       lang="en"
       className={`${cormorant.variable} ${sourceSans.variable}`}
     >
-      <body className="min-h-screen flex flex-col antialiased" style={{ backgroundColor: "#f5f0eb", color: "#2c1810" }}>
+      <body suppressHydrationWarning className="min-h-screen flex flex-col antialiased" style={{ backgroundColor: "#f5f0eb", color: "#2c1810" }}>
         <Nav />
         <main className="flex-1">{children}</main>
         <Footer />
